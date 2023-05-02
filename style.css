@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli';
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    margin: 20px;
+    height: 60vh;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.20) 5px 10px 10px;
+    width: 20%;
+    height: 70%;
+}
+
+.price-name {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #333;
+}
+
+.price p {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.price {
+    display: flex;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.info p {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.fa-solid {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.btn {
+    color: #fff;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 8px;
+    transform: scaleY(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
